@@ -1,0 +1,145 @@
+/* App-wide custom styles */
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-light: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-background {
+  background: linear-gradient(180deg, #f1f5f9 0%, #f8fafc 100%);
+  min-height: 100vh;
+}
+
+/* Hero Header Card */
+.hero-header {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #3b82f6 100%);
+  border: none;
+}
+
+.header-decoration-circle {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Stat Cards */
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--border-light) !important;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08) !important;
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+}
+
+/* Todo Items */
+.todo-item-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+  border: 1px solid var(--border-light) !important;
+}
+
+.todo-item-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.06) !important;
+}
+
+.completed-item {
+  opacity: 0.85;
+  background-color: #f8fafc !important;
+  border-left: 4px solid #10b981 !important;
+}
+
+.check-toggle-btn {
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+
+.check-toggle-btn:hover {
+  transform: scale(1.15);
+}
+
+.action-btn {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.15s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.08);
+}
+
+/* Custom Checkbox & Strikethrough */
+.text-decoration-line-through {
+  text-decoration-thickness: 1.5px !important;
+}
+
+/* Empty State Card */
+.empty-state-icon {
+  width: 80px;
+  height: 80px;
+}
+
+/* Badges styling */
+.badge.bg-purple {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
+}
+
+.badge.bg-teal {
+  background-color: #ccfbf1;
+  color: #0f766e;
+  border: 1px solid #99f6e4;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Form input polish */
+.form-control:focus,
+.form-select:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .hero-header {
+    padding: 1.5rem !important;
+  }
+}

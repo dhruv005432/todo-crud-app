@@ -1,0 +1,48 @@
+{
+  "todos": [
+    {
+      "id": 1727500000001,
+      "title": "Learn React Fundamentals",
+      "description": "Master JSX, Props, State, Component Lifecycle, and Virtual DOM concepts.",
+      "priority": "High",
+      "category": "Learning",
+      "dueDate": "2026-09-30",
+      "completed": true,
+      "createdAt": "2026-09-26T08:00:00.000Z",
+      "updatedAt": "2026-09-26T08:00:00.000Z"
+    },
+    {
+      "id": 1727500000002,
+      "title": "Master React Hooks",
+      "description": "Practice useState, useEffect, useMemo, useCallback, and useRef in real projects.",
+      "priority": "High",
+      "category": "Study",
+      "dueDate": "2026-10-02",
+      "completed": false,
+      "createdAt": "2026-09-27T10:15:00.000Z",
+      "updatedAt": "2026-09-27T10:15:00.000Z"
+    },
+    {
+      "id": 1727500000003,
+      "title": "Build Portfolio CRUD Application",
+      "description": "Create responsive Todo app with LocalStorage, Bootstrap 5, search, and filter features.",
+      "priority": "Medium",
+      "category": "Work",
+      "dueDate": "2026-10-05",
+      "completed": false,
+      "createdAt": "2026-09-28T09:00:00.000Z",
+      "updatedAt": "2026-09-28T09:00:00.000Z"
+    },
+    {
+      "id": 1727500000004,
+      "title": "Buy Groceries & Study Snacks",
+      "description": "Coffee beans, green tea, fruits, and notebook sticky notes.",
+      "priority": "Low",
+      "category": "Shopping",
+      "dueDate": "2026-09-29",
+      "completed": false,
+      "createdAt": "2026-09-28T11:00:00.000Z",
+      "updatedAt": "2026-09-28T11:00:00.000Z"
+    }
+  ]
+}
